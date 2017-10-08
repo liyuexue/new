@@ -1,0 +1,240 @@
+@import "../css/reset.css";
+body{
+  font-size:.32rem;
+}
+html,body,.container{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+.container{
+  display:-webkit-flex;
+  flex-direction:column;
+}
+.main{
+  -webkit-flex:1;
+  overflow-y:scroll;
+  img{
+    width: 90%;
+    margin-left:5%;
+    height:auto;
+    margin-top:.4rem;
+  }
+  p{
+    height:.3rem;
+    background:#EBEDEF;
+    margin-top:.3rem;
+  }
+}
+.swiper-container{
+  width: 100%;
+}
+.box{
+  width:88%;
+  margin-left:3%;
+  display:-webkit-flex;
+  flex-wrap:wrap;
+  dl{
+    width:20%;
+    height:1.5rem;
+    display:-webkit-flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+    margin:.3rem -2px .1rem -2px;
+    dd{
+      width: 40px;
+      height: 40px;
+      border-radius:50%;
+      text-align:center;
+      line-height:40px;
+      background:#FF6165;
+
+      color:#fff;
+      i{
+        font-size:.4rem;
+      }
+    }
+    dt{
+      margin-top:10px;
+      font-size:.3rem;
+      color:#4B4B4B;
+    }
+  }
+}
+.menu{
+    margin-left:45%;
+    margin-top:.3rem;
+    span{
+        display:inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius:50%;
+        margin-right:5px;
+        background:red;
+    }
+}
+.sec{
+  img{
+    width: 70%;
+    height:auto;
+    margin-left:15%;
+    margin-top:.4rem;
+  }
+  h2{
+    height:1.3rem;
+    line-height:1.3rem;
+    padding-left:10px;
+    width:86%;
+    margin-left:7%;
+    font-size:.4rem;
+    span{
+      border-left:5px solid #FF9589;
+      height:.75rem;
+      position:relative;
+      margin-right:10px;
+    }
+  }
+}
+.money{
+  width:90%;
+  margin-top:-.3rem;
+  display:-webkit-flex;
+  flex-wrap:wrap;
+  height:auto;
+  dl{
+    width:48%;
+    margin-left:2%;
+    display:-webkit-flex;
+    flex-direction:column;
+    text-align:center;
+    margin-bottom:.1rem;
+    dd{
+      width: 95%;
+      img{
+        width: 100%;
+      }
+    }
+    dt{
+      font-size:.3rem;
+      line-height:.4rem;
+      margin-top:.1rem;
+      width:4rem;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      margin-left:-3px;
+    }
+  }
+}
+.header{
+  height:1.3rem;
+  line-height:1.3rem;
+  display:-webkit-flex;
+  padding:0 .3rem;
+  background:#1B81D1;
+  a{
+    color:#fff;
+    &:nth-child(1){
+      -webkit-flex:2;
+      font-size:.4rem;
+      margin-right:15px;
+    }
+    &:nth-child(2){
+      -webkit-flex:7;
+      font-size:.6rem;
+      text-align:center;
+      position:relative;
+      margin-top:-.1rem;
+      input{
+        width:100%;
+        height:.8rem;
+        line-height:.8rem;
+        padding-left:35px;
+        border:0;
+        background:rgba(0,0,50,.2);
+        border-radius:7px;
+        color:#fff;
+        font-size:.3rem;
+        margin-top:-.2rem;
+      }
+      i{
+        position:absolute;
+        font-size:.4rem;
+        top:5px;
+        left:10px;
+        vertical-align:middle;
+      }
+    }
+    &:nth-child(3){
+      -webkit-flex:1;
+      position:relative;
+      margin-left:15px;
+      margin-right:8px;
+      text-align:right;
+      i{
+        font-size:.5rem;
+        vertical-align:middle;
+      }
+      span{
+        position:absolute;
+        width: 15px;
+        height: 15px;
+        border-radius:50%;
+        background:red;
+        top:10px;
+      }
+    }
+  }
+}
+.footer{
+  height:1.5rem;
+  border-top:1px solid #B0B1B2;
+  ul{
+    display:-webkit-flex;
+    li{
+      width: 25%;
+      text-align:center;
+      position:relative;
+      i{
+        display:block;
+        color:#909090;
+        font-size:.6rem;
+        margin-top:.2rem;
+      }
+      a{
+        color:#D3D3D3;
+        font-size:.3rem;
+      }
+      span{
+        position:absolute;
+        width:25px;
+        height:25px;
+        line-height:25px;
+        text-align:center;
+        background:red;
+        color:#fff;
+        font-size:.3rem;
+        border-radius:50%;
+        top:3px;
+        right:12px;
+      }
+      &:nth-child(2){
+        i{
+          color:#008FDF;
+        }
+        a{
+          color:#008FDF;
+        }
+      }
+      &:hover{
+        i{
+          color:#008FDF;
+        }
+        a{
+          color:#008FDF;
+        }
+      }
+    }
+  }
+}
